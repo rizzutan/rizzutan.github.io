@@ -161,7 +161,7 @@ Next your tasked with the housing for the people who will live in this community
 
 [[Individual Housing|Individual]]
 [[Housing Complexes|Building]]</tw-passagedata><tw-passagedata pid="10" name="Traditional" tags="" position="404,770" size="100,100">&lt;&lt;set $points to $points - 1&gt;&gt;
-&lt;&lt;if $points &lt;&lt; 0&gt;&gt;
+&lt;&lt;if $points &lt; 0&gt;&gt;
 	&lt;&lt;goto &quot;Bad End&quot;&gt;&gt;
 &lt;&lt;/if&gt;&gt;
 
@@ -227,12 +227,12 @@ dynanyx</tw-passagedata><tw-passagedata pid="18" name="Examine" tags="" position
 
 [[Look deeper into their pasts|Examine]]
 [[Choose Hydrolia|Hydrolia]]
-[[CHoose Dynanyx|Dynanyx]]</tw-passagedata><tw-passagedata pid="20" name="Hydrolia" tags="" position="479,1386" size="100,100">After some intense negotiating and an explanation on what the project is about Hydrolia you both agreed to use sustainable methods of transport and resource collection. This increased the time that it would take for the resources to arrive but does stay within the goal of the project.
+[[Choose Dynanyx|Dynanyx]]</tw-passagedata><tw-passagedata pid="20" name="Hydrolia" tags="" position="479,1386" size="100,100">After some intense negotiating and an explanation on what the project is about Hydrolia you both agreed to use sustainable methods of transport and resource collection. This increased the time that it would take for the resources to arrive but does stay within the goal of the project.
 
 [[Finish Construction|Hydrolia End]]</tw-passagedata><tw-passagedata pid="21" name="Dynanyx" tags="" position="599,1386" size="100,100">After choosing Dynanyx you resume construction, the resources end up arriving surprisingly fast, so you choose to watch over the company with a watchful eye as it seems like something is amyss. After the second shipment arrives you realize that Dynanyx had provided false information about how the resources would be shipped to you as it arrived by plane instead of boat like you were told, turns out that Dynanyx did not align with the full vision of the project. Setting things aside you decide to cut your losses as you have contracted them to provide all the resources for the project.
 
 [[Finish Construction|Dynanyx End]]</tw-passagedata><tw-passagedata pid="22" name="Dynanyx End" tags="" position="599,1536" size="100,100">&lt;&lt;set $points to $points - 1&gt;&gt;
-&lt;&lt;if $points &lt;&lt; 0&gt;&gt;
+&lt;&lt;if $points &lt;= 0&gt;&gt;
 	&lt;&lt;goto &quot;Bad End 2&quot;&gt;&gt;
 &lt;&lt;/if&gt;&gt;
 
@@ -244,7 +244,7 @@ Neutral End
 
 Good End
 
-&lt;img src=&quot;img/city.jpg&quot; width=&quot;600&quot; height=&quot;337.5&quot;&gt;</tw-passagedata><tw-passagedata pid="24" name="Bad End 2" tags="" position="716,1535.5" size="100,100">The project was finally finished but it did not manage to achieve its goal due to numerous poor decisions, this unfortunately caused the city to be more harm than good regarding its goal.
+&lt;img src=&quot;img/city.jpg&quot; width=&quot;600&quot; height=&quot;337.5&quot;&gt;</tw-passagedata><tw-passagedata pid="24" name="Bad End 2" tags="" position="716,1535" size="100,100">The project was finally finished but it did not manage to achieve its goal due to numerous poor decisions, this unfortunately caused the city to be more harm than good regarding its goal.
 
 Bad End 2</tw-passagedata></tw-storydata>
 	<script id="script-sugarcube" type="text/javascript">
